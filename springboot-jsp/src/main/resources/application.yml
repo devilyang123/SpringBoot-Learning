@@ -1,0 +1,7 @@
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/page/ #配置视图解析的前缀
+      suffix: .jsp #配置视图解析的后缀
+server:
+  port: 80
