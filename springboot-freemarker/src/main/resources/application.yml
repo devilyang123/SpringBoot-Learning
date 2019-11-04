@@ -1,0 +1,11 @@
+server:
+  port: 80
+spring:
+  freemarker:
+    cache: false #开发时建议关闭缓存
+    charset: utf-8
+    check-template-location: true
+    content-type: text/html
+    enabled: true
+    suffix: .ftl
+    template-loader-path: classpath:/templates #配置模板所在目录
