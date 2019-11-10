@@ -1,0 +1,10 @@
+spring:
+  thymeleaf:
+    enabled: true
+    cache: false #开发环境关闭缓存，生成环境建议开启缓存
+    mode: HTML
+    encoding: UTF-8
+    prefix: classpath:/templates/
+    suffix: .html
+server:
+  port: 80
