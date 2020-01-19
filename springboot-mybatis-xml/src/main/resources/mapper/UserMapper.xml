@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- namespace对应接口全类名 -->
+<mapper namespace="com.xiao.mapper.UserMapper">
+    <!-- id要与接口中方法名保持一致,入参要入接口方法中入参类型保持一致，返回值要与实体类对应
+    （一下这种方式要求表中的字段按驼峰命名规则转换后要与实体类中属性名称保持一致） -->
+    <select id="getUserById" parameterType="java.lang.Long" resultType="com.xiao.entity.User">
+        select * from tb_user where id = #{id}
+    </select>
+
+</mapper>
